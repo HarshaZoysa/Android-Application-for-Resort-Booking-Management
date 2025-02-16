@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="#F5F5F5"
+        tools:context=".AdminHome">
+
+        <ImageView
+            android:id="@+id/logoImageView"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="24dp"
+            android:src="@drawable/luxevista_logo"
+            android:contentDescription="App Logo"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Admin Dashboard"
+            android:textAlignment="center"
+            android:fontFamily="@font/poppins"
+            android:textStyle="bold"
+            android:textSize="28sp"
+            android:textColor="#1976D2"
+            android:padding="16dp"
+            android:background="@drawable/title_background"
+            android:layout_marginBottom="32dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="16dp">
+
+            <Button
+                android:id="@+id/viewUsersButton"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:layout_margin="8dp"
+                android:text="VIEW\nUSERS"
+                android:textSize="16sp"
+                android:padding="16dp"
+                android:background="@drawable/button_background_blue"/>
+
+            <Button
+                android:id="@+id/manageRoomsButton"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:layout_margin="8dp"
+                android:text="MANAGE\nROOMS"
+                android:textSize="16sp"
+                android:padding="16dp"
+                android:background="@drawable/button_background_green"/>
+
+        </LinearLayout>
+
+    <Button
+        android:id="@+id/logoutbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LOG OUT"
+        android:textSize="16sp"
+
+        android:backgroundTint="@color/ValentineRed"/>
+
+</LinearLayout>
+

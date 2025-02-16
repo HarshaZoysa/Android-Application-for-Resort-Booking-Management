@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "527877488976",
+    "project_id": "luxevista-1bdec",
+    "storage_bucket": "luxevista-1bdec.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:527877488976:android:9225711bce4db2ca266c55",
+        "android_client_info": {
+          "package_name": "com.example.luxevistaresort"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBp7hwyGW_i5oyv8ANDgUlA1TH2eS2qBLk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

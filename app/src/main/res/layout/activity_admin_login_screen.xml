@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".adminLoginScreen"
+    android:orientation="vertical"
+    android:gravity="center">
+
+
+    <ImageView
+        android:id="@+id/overlayImage"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:contentDescription="Logo Image"
+        android:scaleType="fitXY"
+        android:src="@drawable/luxevista_logo" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome Admin "
+        android:textSize="25sp"
+        android:textFontWeight="900"
+        android:textColor="@color/purple_500"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/poppins"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please login To Your Admin Account"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:alpha="0.5"
+        android:fontFamily="@font/poppins"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="start" android:padding="16dp"
+        android:layout_marginHorizontal="25dp"
+        android:maxWidth="488dp">
+
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:text="Email Address :"
+            android:maxWidth="488dp"/>
+
+        <EditText
+            android:id="@+id/adminemailtxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:maxWidth="488dp"/>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Password :"
+            android:maxWidth="488dp"/>
+
+        <EditText
+            android:id="@+id/adminPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:maxWidth="488dp"/>
+
+        <Button
+            android:id="@+id/adminLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login "
+            android:maxWidth="200dp"/>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

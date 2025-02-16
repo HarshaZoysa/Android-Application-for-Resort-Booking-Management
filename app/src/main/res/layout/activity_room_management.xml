@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add New Room"
+            android:textColor="@color/black"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="32dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/edit_text_background">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Room Name"
+                android:textSize="14sp"
+                android:textColor="@color/gray"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"/>
+
+            <EditText
+                android:id="@+id/newRoomName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="Enter room name"
+                android:padding="16dp"
+                android:textSize="16sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/edit_text_background">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Room Type"
+                android:textSize="14sp"
+                android:textColor="@color/gray"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"/>
+
+            <EditText
+                android:id="@+id/newRoomType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="Enter room type"
+                android:padding="16dp"
+                android:minLines="3"
+                android:gravity="top"
+                android:textSize="16sp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/edit_text_background">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Room Description"
+                android:textSize="14sp"
+                android:textColor="@color/gray"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"/>
+
+            <EditText
+                android:id="@+id/newRoomDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="Enter room description"
+                android:padding="16dp"
+                android:minLines="3"
+                android:gravity="top"
+                android:textSize="16sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/edit_text_background">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Price per Night ($)"
+                android:textSize="14sp"
+                android:textColor="@color/gray"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"/>
+
+            <EditText
+                android:id="@+id/newRoomPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="Enter price"
+                android:inputType="numberDecimal"
+                android:padding="16dp"
+                android:textSize="16sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/edit_text_background">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Number of Beds"
+                android:textSize="14sp"
+                android:textColor="@color/gray"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"/>
+
+            <EditText
+                android:id="@+id/bedsCount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="Enter number of beds"
+                android:inputType="number"
+                android:padding="16dp"
+                android:textSize="16sp"/>
+        </LinearLayout>
+
+
+
+
+
+
+
+        <Button
+            android:id="@+id/selectPhotosBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Photos"
+            android:textAllCaps="false"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/button_background"
+            android:textColor="@color/white"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/imageRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:visibility="gone"
+            android:layout_marginBottom="24dp"/>
+
+        <Button
+            android:id="@+id/addRoomBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Room"
+            android:textAllCaps="false"
+            android:padding="16dp"
+            android:background="@drawable/button_background"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+</ScrollView>

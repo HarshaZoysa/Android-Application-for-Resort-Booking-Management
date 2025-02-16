@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CustomerHome"
+    android:orientation="vertical"
+   >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+
+
+        <ImageView
+            android:id="@+id/customerpic"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:contentDescription="active User Image"
+            android:src="@drawable/user"
+            android:padding="10dp"/>
+
+        <TextView
+            android:id="@+id/custname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Customer_name Here"
+            android:fontFamily="@font/poppins"
+            android:textFontWeight="600"
+            android:textColor="@color/black"
+             />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="15dp" >
+
+        <Button
+            android:id="@+id/manageprofilebtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=" MANAGE PROFILE"
+            android:layout_margin="15dp"
+            android:backgroundTint="@color/teal_200"
+            android:width="100dp"
+            android:height="150dp"/>
+
+
+        <Button
+            android:id="@+id/roomsbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_weight="1"
+            android:width="100dp"
+            android:height="150dp"
+            android:text="AVAILABLE ROOMS"
+
+            />
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="15dp" >
+
+        <Button
+            android:id="@+id/myBooking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_weight="1"
+            android:width="100dp"
+            android:height="150dp"
+            android:text="MY BOOKINGS"
+
+            />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LOG OUT"
+        android:layout_margin="15dp"
+        android:backgroundTint="@color/ValentineRed"/>
+
+
+</LinearLayout>
